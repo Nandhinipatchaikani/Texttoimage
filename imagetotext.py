@@ -1,4 +1,4 @@
-import streamlit as st
+cimport streamlit as st
 import base64
 import requests
 import io
@@ -62,7 +62,7 @@ def query(payload):
         st.error(f"Failed to generate response: {response.status_code} - {response.text}")
         return None
 
-st.title("Text to Image or Other Output")
+st.title("Welcome to NANDS Image Generator !")
 
 # Input for text prompt
 prompt = st.text_input("Enter your Imagination:")
